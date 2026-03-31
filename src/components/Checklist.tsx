@@ -42,8 +42,8 @@ const days: ChecklistDay[] = [
     title: "Set Up Your Brand Account",
     description:
       "Pick one platform (Instagram, TikTok, or Threads) and create an account for your brand. Fill out your bio, add a profile photo, and post one introduction. If filming content feels overwhelming, look into building an AI twin to create content for you.",
-    affiliateLabel: "Learn About the AI Twin Course",
-    affiliateUrl: "#AFFILIATE_LINK_AI_TWIN",
+    affiliateLabel: "Learn About AI Creator Studio",
+    affiliateUrl: "https://stan.store/affiliates/a09259e3-1e52-4360-8926-18c42d099708",
   },
   {
     day: 6,

@@ -31,8 +31,8 @@ const ways = [
       "I'm not talking about some creepy deepfake. I'm talking about a professional AI-powered avatar that represents my brand and shares my message consistently.",
       "The result? Daily content. Zero burnout. Full creative control.",
     ],
-    affiliateLabel: "Learn About the AI Twin Course",
-    affiliateUrl: "#AFFILIATE_LINK_AI_TWIN",
+    affiliateLabel: "Learn About AI Creator Studio",
+    affiliateUrl: "https://stan.store/affiliates/a09259e3-1e52-4360-8926-18c42d099708",
   },
   {
     number: 3,
