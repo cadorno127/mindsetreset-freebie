@@ -30,7 +30,7 @@ export default function EmailGate({
             5 Ways I Use AI to Run My Business While Working a 9&#8209;to&#8209;5
           </h1>
           <p className="text-text-secondary text-lg mt-4">
-            How I went from $28K to $98K in one year — without quitting my day
+            How I went from $28K to $98K in one year without quitting my day
             job.
           </p>
         </div>

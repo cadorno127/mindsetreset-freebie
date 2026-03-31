@@ -12,7 +12,7 @@ const ways = [
     paragraphs: [
       "One of the biggest things holding people back from selling online is thinking they need to create everything themselves from scratch. That used to be me too.",
       "AI changed the game. Instead of spending weeks on one product, I can test multiple ideas quickly and double down on what sells.",
-      "This is exactly what I learned inside Sara Finance's Inner Circle — a step-by-step system for creating digital products and using social media to sell them. It removed all the guesswork for me.",
+      "This is exactly what I learned inside Sara Finance's Inner Circle, a step-by-step system for creating digital products and using social media to sell them. It removed all the guesswork for me.",
     ],
     bullets: [
       "Brainstorm product ideas based on what's trending",
@@ -27,7 +27,7 @@ const ways = [
     title: "AI for Content Creation",
     paragraphs: [
       "Here's what most people don't realize: you don't need to be on camera 24/7 to build a brand on social media.",
-      "I use an AI twin — a digital version of me — to create Instagram content. It looks like me, sounds like me, and delivers value to my audience while I'm at my desk job.",
+      "I use an AI twin (a digital version of me) to create Instagram content. It looks like me, sounds like me, and delivers value to my audience while I'm at my desk job.",
       "I'm not talking about some creepy deepfake. I'm talking about a professional AI-powered avatar that represents my brand and shares my message consistently.",
       "The result? Daily content. Zero burnout. Full creative control.",
     ],
@@ -40,7 +40,7 @@ const ways = [
     paragraphs: [
       "Creating content is one thing. Posting consistently across platforms is another.",
       "I literally set up my content for the week and let the automation handle the rest. While I'm answering help desk tickets at work, my content is going out and reaching new people.",
-      "Consistency is what builds trust — and automation is what makes consistency possible when you have a full-time job.",
+      "Consistency is what builds trust, and automation is what makes consistency possible when you have a full-time job.",
     ],
     bullets: [
       "Schedule and publish posts to Instagram and Pinterest automatically",
@@ -63,12 +63,12 @@ const ways = [
   },
   {
     number: 5,
-    title: "AI for Scaling — Without Quitting Your Job (Yet)",
+    title: "AI for Scaling: Without Quitting Your Job (Yet)",
     paragraphs: [
       "Here's the mindset shift that changed everything for me: you don't need to quit your 9-to-5 to start building wealth. But you do need to stop guessing and start making decisions based on research.",
-      "My first year selling on Etsy, I made $28K. Not bad — but I was throwing things at the wall and hoping they'd stick. Then I invested in a print-on-demand coach and everything changed. I stopped guessing what would sell and started basing every decision on data and research.",
-      "The result? My next year I did $98K in revenue — nearly 4x what I made before.",
-      "Now I use AI to do that research even faster. AI handles the repetitive work so I can focus on strategy, creativity, and growth — all while still collecting my 9-to-5 paycheck.",
+      "My first year selling on Etsy, I made $28K. Not bad, but I was throwing things at the wall and hoping they'd stick. Then I invested in a print-on-demand coach and everything changed. I stopped guessing what would sell and started basing every decision on data and research.",
+      "The result? My next year I did $98K in revenue, nearly 4x what I made before.",
+      "Now I use AI to do that research even faster. AI handles the repetitive work so I can focus on strategy, creativity, and growth, all while still collecting my 9-to-5 paycheck.",
       "You can start today. Even if you've never sold anything online. Even if you have no audience. Even if you only have 1 hour a day. The key is investing in the right guidance and letting AI do the heavy lifting.",
     ],
     affiliateLabel: "Join Arlan's First 5K Community",
@@ -123,7 +123,7 @@ export default function Home() {
             Margins of My Day
           </h2>
           <p className="text-text-secondary text-lg leading-relaxed">
-            Two and a half years ago, I was clocking in and clocking out —
+            Two and a half years ago, I was clocking in and clocking out,
             trading my time for a paycheck and feeling like there had to be
             more.
           </p>
@@ -134,13 +134,13 @@ export default function Home() {
           </p>
           <p className="text-text-secondary text-lg leading-relaxed">
             My first year I made $28K. Then I invested in a coach, started
-            making decisions based on research instead of guessing — and hit{" "}
+            making decisions based on research instead of guessing, and hit{" "}
             <span className="text-white font-semibold">$98K in my second year</span>.
             And I still work my 9-to-5.
           </p>
           <p className="text-text-secondary text-lg leading-relaxed">
             The secret? I stopped guessing, got the right guidance, and started
-            working smarter — with AI. Here are the 5 ways AI helps me run and
+            working smarter with AI. Here are the 5 ways AI helps me run and
             grow my business without sacrificing my sleep, my sanity, or my
             full-time job.
           </p>
@@ -173,7 +173,7 @@ export default function Home() {
             You Have the Guide. You Have the Checklist. Now Make the Decision.
           </h2>
           <p className="text-text-secondary text-lg">
-            This isn&rsquo;t just information — it&rsquo;s a starting line.
+            This isn&rsquo;t just information; it&rsquo;s a starting line.
             Everything you need to take your first step is in your hands right
             now.
           </p>

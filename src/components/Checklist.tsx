@@ -21,19 +21,19 @@ const days: ChecklistDay[] = [
     day: 2,
     title: "Pick Your Niche",
     description:
-      "Open ChatGPT or Claude and type: \"Give me 10 digital product ideas for [your interest/audience].\" Don't overthink it. Pick the one that excites you most. You can always pivot later — but you can't steer a parked car.",
+      "Open ChatGPT or Claude and type: \"Give me 10 digital product ideas for [your interest/audience].\" Don't overthink it. Pick the one that excites you most. You can always pivot later, but you can't steer a parked car.",
   },
   {
     day: 3,
     title: "Research Before You Create",
     description:
-      "Ask AI: \"What are the top trending keywords and gaps in the [your niche] market?\" Look at what's already selling on Etsy, Amazon, or Gumroad. This one step is what took me from $28K to $98K — I stopped guessing and started researching.",
+      "Ask AI: \"What are the top trending keywords and gaps in the [your niche] market?\" Look at what's already selling on Etsy, Amazon, or Gumroad. This one step is what took me from $28K to $98K. I stopped guessing and started researching.",
   },
   {
     day: 4,
     title: "Create Your First Digital Product Draft",
     description:
-      "Use AI to help you create a simple product — a planner, checklist, guide, or template. It doesn't need to be perfect. Done beats perfect every time. If you want a step-by-step system for this, Sara Finance's Inner Circle walks you through the entire process.",
+      "Use AI to help you create a simple product like a planner, checklist, guide, or template. It doesn't need to be perfect. Done beats perfect every time. If you want a step-by-step system for this, Sara Finance's Inner Circle walks you through the entire process.",
     affiliateLabel: "Check Out Sara Finance's Inner Circle",
     affiliateUrl: "#AFFILIATE_LINK_SARA_FINANCE",
   },
@@ -41,7 +41,7 @@ const days: ChecklistDay[] = [
     day: 5,
     title: "Set Up Your Brand Account",
     description:
-      "Pick one platform — Instagram, TikTok, or Threads — and create an account for your brand. Fill out your bio, add a profile photo, and post one introduction. If filming content feels overwhelming, look into building an AI twin to create content for you.",
+      "Pick one platform (Instagram, TikTok, or Threads) and create an account for your brand. Fill out your bio, add a profile photo, and post one introduction. If filming content feels overwhelming, look into building an AI twin to create content for you.",
     affiliateLabel: "Learn About the AI Twin Course",
     affiliateUrl: "#AFFILIATE_LINK_AI_TWIN",
   },
@@ -176,7 +176,7 @@ export default function Checklist() {
             </p>
             <p className="text-text-secondary text-lg">
               You just accomplished more in 7 days than most people do in a
-              month of &ldquo;thinking about it.&rdquo; Keep going — this is
+              month of &ldquo;thinking about it.&rdquo; Keep going. This is
               just the beginning.
             </p>
           </div>
