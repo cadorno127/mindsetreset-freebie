@@ -72,7 +72,7 @@ const ways = [
       "You can start today. Even if you've never sold anything online. Even if you have no audience. Even if you only have 1 hour a day. The key is investing in the right guidance and letting AI do the heavy lifting.",
     ],
     affiliateLabel: "Join Arlan's First 5K Community",
-    affiliateUrl: "#AFFILIATE_LINK_ARLANS_FIRST_5K",
+    affiliateUrl: "https://www.skool.com/yourfirst5k/about?ref=7b45eb39857c45d2b1e2f9f08591e102",
   },
 ];
 
