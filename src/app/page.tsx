@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import EmailGate from "@/components/EmailGate";
 import WayCard from "@/components/WayCard";
 import Checklist from "@/components/Checklist";
+import IdeaFinder from "@/components/IdeaFinder";
 
 const ways = [
   {
@@ -159,6 +160,9 @@ export default function Home() {
           )}
         </div>
       ))}
+
+      {/* AI Idea Finder */}
+      <IdeaFinder />
 
       {/* Divider before checklist */}
       <div className="max-w-2xl mx-auto border-t border-white/5" />
