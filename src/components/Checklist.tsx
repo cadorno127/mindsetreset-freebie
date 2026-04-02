@@ -56,7 +56,7 @@ const days: ChecklistDay[] = [
     title: "Join a Community",
     description:
       "You don't have to do this alone. Surround yourself with people who are on the same journey. Having support, accountability, and a clear path makes the difference between quitting at week two and building real income.",
-    affiliateLabel: "Join Arlan's First 5K Community",
+    affiliateLabel: "Join Arlan's First 5K Community (Free)",
     affiliateUrl: "https://www.skool.com/yourfirst5k/about?ref=7b45eb39857c45d2b1e2f9f08591e102",
   },
 ];
