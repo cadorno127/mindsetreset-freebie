@@ -16,9 +16,9 @@ const ways = [
       "This is exactly what I learned inside Sara Finance's Inner Circle, a step-by-step system for creating digital products and using social media to sell them. It removed all the guesswork for me.",
     ],
     bullets: [
-      "Brainstorm product ideas based on what's trending",
-      "Generate designs and mockups in minutes instead of hours",
-      "Create digital products like planners, guides, and journals at speed",
+      "Find something you're passionate about and turn it into a digital product",
+      "As long as your product solves a problem and is something you care about, this can work",
+      "Build your business on the side while working your job. So many people have done it",
     ],
     affiliateLabel: "Check Out Sara Finance's Inner Circle",
     affiliateUrl: "#AFFILIATE_LINK_SARA_FINANCE",
