@@ -8,6 +8,15 @@ interface Idea {
   firstStep: string;
 }
 
+interface IdeaTemplate {
+  idea: string;
+  description: (skill: string) => string;
+  firstStep: string;
+  time: string[];
+  goal: string[];
+  style: string[];
+}
+
 const timeOptions = [
   { value: "1-2 hours", label: "1–2 hrs/week" },
   { value: "3-5 hours", label: "3–5 hrs/week" },
@@ -28,54 +37,157 @@ const styleOptions = [
   { value: "a mix of both", label: "A mix of both" },
 ];
 
+const ideaPool: IdeaTemplate[] = [
+  {
+    idea: "Digital Printables Shop on Etsy",
+    description: (skill) =>
+      `Use your knowledge of ${skill} to create downloadable planners, checklists, or worksheets on Etsy. Once listed, they sell while you sleep with zero inventory or shipping.`,
+    firstStep:
+      "Open Canva for free, search 'planner template,' customize one around your topic, and list it on Etsy for $3–$9.",
+    time: ["1-2 hours", "3-5 hours", "5-10 hours", "10+ hours"],
+    goal: ["earn extra spending money", "build a $1K–$5K/month side income", "eventually replace my 9-to-5 income", "build a long-term passive income stream"],
+    style: ["creating original content and products", "a mix of both"],
+  },
+  {
+    idea: "AI Prompt Pack",
+    description: (skill) =>
+      `Create a pack of ready-to-use ChatGPT or Claude prompts for people interested in ${skill}. This is one of the fastest digital products to make and easy to sell for $7–$17.`,
+    firstStep:
+      "Write 20 useful prompts related to your topic, paste them into a Canva PDF, and list it on Gumroad or Etsy.",
+    time: ["1-2 hours", "3-5 hours", "5-10 hours", "10+ hours"],
+    goal: ["earn extra spending money", "build a $1K–$5K/month side income", "build a long-term passive income stream"],
+    style: ["creating original content and products", "curating and organizing info for others", "a mix of both"],
+  },
+  {
+    idea: "Pinterest Affiliate Marketing",
+    description: (skill) =>
+      `Pin content related to ${skill} on Pinterest and link to affiliate products you already use and trust. No product creation needed — just curate helpful resources and earn commissions.`,
+    firstStep:
+      "Create a free Pinterest business account, join one affiliate program in your niche (Amazon, ShareASale, etc.), and pin 5 images this week linking to products.",
+    time: ["1-2 hours", "3-5 hours"],
+    goal: ["earn extra spending money", "build a long-term passive income stream"],
+    style: ["curating and organizing info for others", "a mix of both"],
+  },
+  {
+    idea: "Short eBook or Digital Guide",
+    description: (skill) =>
+      `Package what you know about ${skill} into a 10–20 page PDF guide. People pay for organized, actionable information that saves them hours of research.`,
+    firstStep:
+      "Outline 5 key lessons or tips from your skill, write one page per tip using AI to help, and sell it on Gumroad for $7–$27.",
+    time: ["3-5 hours", "5-10 hours", "10+ hours"],
+    goal: ["earn extra spending money", "build a $1K–$5K/month side income", "eventually replace my 9-to-5 income"],
+    style: ["creating original content and products", "a mix of both"],
+  },
+  {
+    idea: "Resource Curation Bundle",
+    description: (skill) =>
+      `Compile the best free tools, links, templates, and tips related to ${skill} into one organized bundle. Buyers pay for the curation work you've already done.`,
+    firstStep:
+      "Spend one hour collecting the 20 best free resources in your niche, organize them in a Notion page or PDF, and sell access for $5–$15 on Gumroad.",
+    time: ["1-2 hours", "3-5 hours"],
+    goal: ["earn extra spending money", "build a long-term passive income stream"],
+    style: ["curating and organizing info for others", "a mix of both"],
+  },
+  {
+    idea: "Print-on-Demand Etsy Shop",
+    description: (skill) =>
+      `Design t-shirts, mugs, or tote bags themed around ${skill} and sell them on Etsy with zero upfront cost. A print partner handles printing and shipping for every order.`,
+    firstStep:
+      "Sign up for Printify (free), connect it to an Etsy shop, and upload your first 3 designs using Canva.",
+    time: ["3-5 hours", "5-10 hours", "10+ hours"],
+    goal: ["earn extra spending money", "build a $1K–$5K/month side income", "eventually replace my 9-to-5 income"],
+    style: ["creating original content and products", "a mix of both"],
+  },
+  {
+    idea: "Notion or Canva Template Shop",
+    description: (skill) =>
+      `Create ready-to-use Notion dashboards or Canva templates based on ${skill}. Buyers pay once and you earn repeatedly from the same product with no extra work.`,
+    firstStep:
+      "Build one Notion template or Canva design around your topic, upload it to Gumroad for free, and share it on Pinterest.",
+    time: ["1-2 hours", "3-5 hours", "5-10 hours"],
+    goal: ["earn extra spending money", "build a $1K–$5K/month side income", "build a long-term passive income stream"],
+    style: ["creating original content and products", "a mix of both"],
+  },
+  {
+    idea: "Curated Newsletter",
+    description: (skill) =>
+      `Send a weekly email rounding up the best news, tips, and tools related to ${skill}. Build an audience over time and monetize with affiliate links or a paid tier.`,
+    firstStep:
+      "Start a free Beehiiv newsletter, write your first issue with 3–5 curated links and one tip, and share it on social media to get your first 10 subscribers.",
+    time: ["3-5 hours", "5-10 hours"],
+    goal: ["build a $1K–$5K/month side income", "eventually replace my 9-to-5 income", "build a long-term passive income stream"],
+    style: ["curating and organizing info for others", "a mix of both"],
+  },
+  {
+    idea: "Social Media Content Templates",
+    description: (skill) =>
+      `Design a pack of Instagram or Pinterest post templates around ${skill} that other creators or small businesses can customize. Templates sell over and over from one upload.`,
+    firstStep:
+      "Create 10 matching Canva templates in your niche, bundle them as a Canva template pack, and list on Etsy or Gumroad.",
+    time: ["3-5 hours", "5-10 hours"],
+    goal: ["earn extra spending money", "build a $1K–$5K/month side income", "build a long-term passive income stream"],
+    style: ["creating original content and products", "a mix of both"],
+  },
+  {
+    idea: "Online Mini Course",
+    description: (skill) =>
+      `Teach what you know about ${skill} in a short 3–5 lesson video or text course. Even a $27 course sold to 50 people is over $1,000 from content you create once.`,
+    firstStep:
+      "Outline 3–5 lessons you could teach, record them on your phone or as a screen recording, and host for free on Gumroad or Teachable.",
+    time: ["5-10 hours", "10+ hours"],
+    goal: ["build a $1K–$5K/month side income", "eventually replace my 9-to-5 income"],
+    style: ["creating original content and products", "a mix of both"],
+  },
+];
+
+function getIdeas(skill: string, time: string, goal: string, style: string): Idea[] {
+  const scored = ideaPool.map((item) => {
+    let score = 0;
+    if (item.time.includes(time)) score += 2;
+    if (item.goal.includes(goal)) score += 2;
+    if (item.style.includes(style)) score += 2;
+    return { item, score };
+  });
+
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map(({ item }) => ({
+      idea: item.idea,
+      description: item.description(skill),
+      firstStep: item.firstStep,
+    }));
+}
+
 export default function IdeaFinder() {
   const [skill, setSkill] = useState("");
   const [time, setTime] = useState("");
   const [goal, setGoal] = useState("");
   const [style, setStyle] = useState("");
   const [ideas, setIdeas] = useState<Idea[] | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
 
   const canSubmit = skill.trim().length > 2 && time && goal && style;
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!canSubmit) return;
-
-    setLoading(true);
-    setError("");
-    setIdeas(null);
-
-    try {
-      const res = await fetch("/api/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ skill, time, goal, style }),
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Something went wrong");
-      setIdeas(data.ideas);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong");
-    } finally {
-      setLoading(false);
-    }
+    setIdeas(getIdeas(skill.trim(), time, goal, style));
   };
 
   const handleReset = () => {
     setIdeas(null);
-    setError("");
+    setSkill("");
+    setTime("");
+    setGoal("");
+    setStyle("");
   };
 
   return (
     <section className="py-16 px-6 border-t border-white/5" id="idea-finder">
       <div className="max-w-2xl mx-auto space-y-8">
-        {/* Header */}
         <div className="text-center space-y-3">
           <span className="text-accent font-semibold text-sm uppercase tracking-widest">
-            Powered by AI
+            Bonus Tool
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold">
             Find Your Perfect Side Hustle
@@ -88,7 +200,6 @@ export default function IdeaFinder() {
 
         {!ideas ? (
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Q1 */}
             <div className="space-y-2">
               <label className="block text-sm font-semibold text-white">
                 1. What&rsquo;s a skill, hobby, or topic you know well?
@@ -103,7 +214,6 @@ export default function IdeaFinder() {
               />
             </div>
 
-            {/* Q2 */}
             <div className="space-y-2">
               <label className="block text-sm font-semibold text-white">
                 2. How much time can you realistically dedicate per week?
@@ -127,7 +237,6 @@ export default function IdeaFinder() {
               </div>
             </div>
 
-            {/* Q3 */}
             <div className="space-y-2">
               <label className="block text-sm font-semibold text-white">
                 3. What&rsquo;s your main goal?
@@ -151,7 +260,6 @@ export default function IdeaFinder() {
               </div>
             </div>
 
-            {/* Q4 */}
             <div className="space-y-2">
               <label className="block text-sm font-semibold text-white">
                 4. Do you prefer creating or curating?
@@ -175,25 +283,12 @@ export default function IdeaFinder() {
               </div>
             </div>
 
-            {error && (
-              <p className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-3">
-                {error}
-              </p>
-            )}
-
             <button
               type="submit"
-              disabled={!canSubmit || loading}
+              disabled={!canSubmit}
               className="w-full py-4 rounded-lg bg-accent hover:bg-accent-hover disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold text-lg transition-colors"
             >
-              {loading ? (
-                <span className="flex items-center justify-center gap-3">
-                  <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  Building your ideas…
-                </span>
-              ) : (
-                "Show Me My Ideas →"
-              )}
+              Show Me My Ideas →
             </button>
           </form>
         ) : (
