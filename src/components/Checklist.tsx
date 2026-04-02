@@ -35,7 +35,7 @@ const days: ChecklistDay[] = [
     description:
       "Use AI to help you create a simple product like a planner, checklist, guide, or template. It doesn't need to be perfect. Done beats perfect every time. If you want a step-by-step system for this, Sara Finance's Inner Circle walks you through the entire process.",
     affiliateLabel: "Check Out Sara Finance's Inner Circle",
-    affiliateUrl: "#AFFILIATE_LINK_SARA_FINANCE",
+    affiliateUrl: "https://financesimple.co/?ref=zxhorajb",
   },
   {
     day: 5,

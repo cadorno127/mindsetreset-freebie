@@ -21,7 +21,7 @@ const ways = [
       "Build your business on the side while working your job. So many people have done it",
     ],
     affiliateLabel: "Check Out Sara Finance's Inner Circle",
-    affiliateUrl: "#AFFILIATE_LINK_SARA_FINANCE",
+    affiliateUrl: "https://financesimple.co/?ref=zxhorajb",
   },
   {
     number: 2,
