@@ -48,6 +48,8 @@ const ways = [
       "Repurpose one piece of content across multiple platforms",
       "Stay consistent even during my busiest work weeks",
     ],
+    affiliateLabel: "Automate Your Social Media with Blotato",
+    affiliateUrl: "https://blotato.com/?ref=christina2l",
   },
   {
     number: 4,
